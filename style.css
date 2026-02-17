@@ -1,0 +1,119 @@
+/* Basic Reset & Body Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header & Navbar */
+header {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto;
+}
+
+.navbar .logo img {
+    height: 50px; /* Adjust logo size */
+    width: auto;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #0056b3;
+}
+
+/* Banner */
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block; /* Remove extra space below image */
+}
+
+/* Content Section */
+.content-section {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line on small screens */
+    gap: 20px; /* Space between cards */
+    margin-top: 20px;
+    justify-content: center; /* Center cards if they don't fill the row */
+}
+
+.card {
+    flex: 1; /* Allow cards to grow and shrink */
+    min-width: 280px; /* Minimum width before wrapping */
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    .cards {
+        flex-direction: column; /* Stack cards vertically on small screens */
+        align-items: center;
+    }
+
+    .card {
+        width: 90%; /* Make cards take up more width on small screens */
+    }
+}
